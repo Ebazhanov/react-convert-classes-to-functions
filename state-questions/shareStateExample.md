@@ -1,3 +1,5 @@
+
+```javascript
 const App = () => {
     state = {selecedVideo: 123};
 
@@ -9,9 +11,12 @@ const App = () => {
         </App>
     )
 };
+```
+
 
 // After adding userState()
 
+```javascript
 const App = () => {
     cosnt [video, setVideo] = useState(null);
 
@@ -23,6 +28,6 @@ const App = () => {
         </App>
     )
 };
+```
 
-
-<img src="https://monosnap.com/image/Kkcee6QqclkhIE5DHYJWMTjf2NQpfY"/>;
+<img src="https://monosnap.com/image/Kkcee6QqclkhIE5DHYJWMTjf2NQpfY"/>
