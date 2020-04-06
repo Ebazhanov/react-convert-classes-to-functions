@@ -1,3 +1,6 @@
+Questions & answers 
+-------------------
+
 ##### STATE
 1. What is the best way to share state between sibling components?
 - [x] example [shareStateExample.js](state-questions/shareStateExample.js)
