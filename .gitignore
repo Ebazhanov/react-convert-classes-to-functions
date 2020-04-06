@@ -1,8 +1,4 @@
 .idea
 cypress.json
 cypress
-public
-src
-package.json
-yarn.lock
 node_modules

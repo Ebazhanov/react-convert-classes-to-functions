@@ -3,7 +3,7 @@ Questions & answers
 
 ##### STATE
 1. What is the best way to share state between sibling components?
-- [x] example [shareStateExample.js](state-questions/shareStateExample.js)
+- [x] examples: [parent to child](https://take.ms/0wr8n)
 - [ ] explanation
 
 2. Why would we use Redux instead of shared state?
