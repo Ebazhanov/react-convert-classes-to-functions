@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import Child from './components/parentToChild/child'
+import Parent from './components/parentToChild/parent'
 
 class App extends Component {
 
@@ -15,7 +15,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <Child buttonClickEvent={this.changeButtonOnClickEvent.bind(this, 'new plc title')}
+                <Parent buttonClickEvent={this.changeButtonOnClickEvent.bind(this, 'new plc title')}
                        title={this.state.title}/>
             </div>
         );
