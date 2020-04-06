@@ -1,6 +1,6 @@
 ##### STATE
 1. What is the best way to share state between sibling components?
-> To pass data between siblings, you have to use the parent as an intermediary. First pass the data from the child to the parent, as an argument into a callback from the parent. Set this incoming parameter as a state on the parent component, then pass it as a prop to the other child.
+[shareStateExample.js](state-questions/shareStateExample.js)
 
 2. Why would we use Redux instead of shared state?
 
