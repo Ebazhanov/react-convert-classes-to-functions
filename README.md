@@ -18,14 +18,11 @@ Questions & answers
 - [ ] example
 - [ ] explanation
 
-5. How do we use use useEffect and what relation that has to the component lifecycle?
+##### COMPONENT LIFECYCLE
+1. What is the React hook useEffect used for and what relation that has to the component lifecycle?
 - [ ] example
 - [ ] explanation
 
-##### COMPONENT LIFECYCLE
-1. What is the React hook useEffect used for?
-- [ ] example
-- [ ] explanation
 2. What is componentDidMount used for?
 - [ ] example
 - [ ] explanation
