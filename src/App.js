@@ -5,7 +5,7 @@ import Parent from './components/parentToChild/parent'
 class App extends Component {
 
     state = {
-        title: 'placeholder title'
+        title: 'on click event title'
     };
 
     changeButtonOnClickEvent = (newTitle) => {

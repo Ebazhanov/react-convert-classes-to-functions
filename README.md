@@ -18,6 +18,10 @@ Questions & answers
 - [ ] example
 - [ ] explanation
 
+5. How do we use use useEffect and what relation that has to the component lifecycle?
+- [ ] example
+- [ ] explanation
+
 ##### COMPONENT LIFECYCLE
 1. What is the React hook useEffect used for?
 - [ ] example
@@ -26,7 +30,7 @@ Questions & answers
 - [ ] example
 - [ ] explanation
 
-##### Pagination example
+##### PAGINATION
 1. How can a React app keep track of the selected page?
 - [ ] example
 - [ ] explanation

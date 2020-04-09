@@ -8,4 +8,4 @@ const child = (props) => {
     )
 };
 
-export default child()
+export default child;
