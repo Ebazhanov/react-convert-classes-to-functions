@@ -1,5 +1,11 @@
-Convert React Class Components to Functional Components with React Hooks
+Examples of how to convert `React Class Components` to` Functional Components` with React Hooks
 -
+> 1. Change `class NameOfComponent extends Component` to `function NameOfComponent(props){`
+> 2. remove the `constructor`
+> 3. remove the `render()` method, keep the `return`
+> 4. add initial state (with state and function) `const` before all methods
+> 5. remove `this.state` throughout the component
+> 6. remove all references to `this` throughout the component
 
 ## Example 1. Class Without State or Lifecycle Methods.
 
@@ -527,4 +533,35 @@ function App() {
 };
 
 export default App;
+```
+
+## 6. Set initial state with useState(). e.g....
+```javascript
+import React, { useState } from ‘react’
+```
+Set a number:
+```javascript
+const [count, setCount] = useState(0)
+```
+Set a string:
+```javascript
+const [username, setUsername] = useState(‘’)
+```
+Set true/false:
+```javascript
+const [isOpen, setIsOpen] = useState(false)
+```
+Set an object:
+```javascript
+const [form, setValues] = useState({
+ id: 0,
+ first: ‘’,
+ last: ‘’,
+ password: ‘’,
+ subscribe: false
+})
+```
+Set an array:
+```javascript
+const [items, setItems] = useState([])
 ```
