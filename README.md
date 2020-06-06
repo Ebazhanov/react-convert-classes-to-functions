@@ -585,3 +585,65 @@ function MyComponent(props) {
 
 } 
 ```
+## 8.Remove event handler bindings
+> We don't need to bind event handlers any more with function components. So if you were doing this;
+>> You can simply remove these lines. (What a gross, overly verbose syntax anyway).
+```javascript
+constructor(props) {  
+  this.onClickHandler = this.onClickHandler.bind(this);  
+} 
+```
+## 9. Replace `this.setState`
+> this.setState obviously doesn't exist any more in our function component. Instead we need to replace each of our setState calls with the relevant state variable setter.
+```javascript
+class MyComponent extends React.Component {  
+  onClickHandler(e) {  
+    this.setState({count: this.state.count+1})  
+  }  
+} 
+```
+Replace with this
+```javascript
+function MyComonent {  
+  const [count, setCount] = useState(0)  
+  const onClickHandler = e => {  
+    setCount(count+1);  
+  }  
+}
+```
+## 10. useEffect for state update side effects
+> Remember how this.setState could accept a callback that would run after the state was updated? Well our useState updater function does no such thing. Instead we have to use the useEffect hook. It doesn't work exactly the same though! useEffect will trigger whenever and of it's dependencies are changed.
+```javascript
+this.setState({counter: this.state.counter+1}, () => {  
+  console.log('Counter was updated!')  
+})  
+```
+to 
+```javascript
+const [counter, setCounter] = useState(0)  
+
+useEffect(() => {  
+  console.log('counter changed!')  
+}, [counter])  
+```
+
+## 11. Replace lifecycle methods with hooks
+**ComponentDidMount**
+Instead of using the componentDidMount method, use the useEffect hook with an empty dependency array.
+```javascript
+useEffect(()=>{  
+  console.log('component mounted!')  
+},[]) //notice the empty array here  
+```
+**ComponentWillUnmount**
+Instead of using the componentWillUnmount method to do cleanup before a component is removed from the React tree, return a function from the useEffect hook with an empty dependency array;
+```javascript
+useEffect(() => {  
+  console.log('component mounted')  
+
+  // return a function to execute at unmount  
+  return () => {  
+    console.log('component will unmount')  
+  }  
+}, []) // notice the empty array  
+```
