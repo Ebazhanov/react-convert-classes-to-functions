@@ -565,3 +565,23 @@ Set an array:
 ```javascript
 const [items, setItems] = useState([])
 ```
+## 7. Remove constructor
+```javascript
+constructor(props) {  
+  super(props);  
+  //Set initial state  
+  this.state = {  
+    counter: 0,  
+    name: ""  
+  }  
+} 
+```
+Use the useState hook
+```javascript
+function MyComponent(props) {  
+
+  const [counter,setCounter] = useState(0);  
+  const [name,setName] = useState("");  
+
+} 
+```
