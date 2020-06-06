@@ -3,7 +3,7 @@ Convert React Class Components to Functional Components with React Hooks
 
 ## Example 1. Class Without State or Lifecycle Methods.
 
-# before 
+#before 
 ```javascript
 import React, { Component } from 'react';
 
@@ -27,7 +27,7 @@ export default App;
 ```
 ==============================================
 
-# after
+#after
 ```javascript
 import React from 'react';
 
@@ -49,7 +49,7 @@ export default App;
 
 ## Example 2. Adding Hooks to Classes with State.
 
-# before
+#before
 ```javascript
 import React, { Component } from 'react';
 
@@ -84,8 +84,8 @@ state = {
 
 export default App;
 ```
-
-# after
+===============================================================
+#after
 ```javascript
 import React, { useState } from 'react';
 
@@ -181,6 +181,7 @@ class App extends Component {
 
 export default App;
 ```
+============================================================================
 #after
 ```javascript
 import React, { useState } from 'react';
@@ -314,6 +315,7 @@ class App extends Component {
 
 export default App;
 ```
+===========================================================================
 #after
 ```javascript
 import React, { useState, useEffect } from 'react';
@@ -462,6 +464,7 @@ class App extends Component {
 
 export default App;
 ```
+==========================================================================
 #after
 ```javascript
 import React, { useState, useEffect } from 'react';
